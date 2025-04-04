@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RydeWithEli</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+    <title>rydewitheli - Your Reviews Destination</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="logo.png" alt="RydeWithEli Logo" class="logo">
-            <button class="mobile-nav" onclick="toggleNav()">☰</button>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/reviews">Reviews</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <img src="logo.png" alt="rydewitheli Logo" id="logo">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/reviews">Reviews</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Welcome to RydeWithEli</h2>
+        <section id="welcome">
+            <h1>Welcome to rydewitheli</h1>
             <p>Your one-stop destination for campgrounds, rest areas, and BLM land reviews.</p>
-            <p>Login with TikTok to get started!</p>
-            <a href="https://rydewitheli-backend.onrender.com/login">
-                <button class="login-btn">Login with TikTok</button>
-            </a>
+            <button id="login-btn" onclick="window.location.href='/login'">Login with TikTok</button>
         </section>
     </main>
 
@@ -36,14 +30,5 @@
         <p>&copy; 2025 rydewitheli. All rights reserved.</p>
         <p><a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a></p>
     </footer>
-
-    <script>
-        function toggleNav() {
-            const nav = document.querySelector('nav ul');
-            nav.classList.toggle('show');
-            const mobileBtn = document.querySelector('.mobile-nav');
-            mobileBtn.classList.toggle('open');
-        }
-    </script>
 </body>
 </html>
