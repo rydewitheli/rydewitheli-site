@@ -18,10 +18,7 @@ TIKTOK_CLIENT_SECRET = "your_tiktok_client_secret_here"  # Replace with your act
 @app.route("/")
 def home():
     user = session.get("user")
-    if user:
-        return render_template("home.html", user=user)
-    else:
-        return render_template("home.html", user=None)
+    return render_template("home.html", user=user)
 
 # Login route to simulate successful login
 @app.route("/login")
