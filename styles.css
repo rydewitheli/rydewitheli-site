@@ -1,4 +1,4 @@
-/* General resets */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -13,39 +13,61 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0; /* Ensure no margin at the top of the page */
 }
 
+/* Full-width header */
 header {
     background-color: #000;
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
+/* Logo styles */
 #logo {
     height: 50px;
 }
 
-#welcome {
+/* Main content section (centered vertically and horizontally) */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 20px;
+    padding: 100px 20px 50px 20px; /* Adjust padding to account for fixed header */
+    width: 100%;
 }
 
+/* Welcome section */
+#welcome {
+    margin-top: 50px;
+}
+
+/* Heading style */
 h1 {
     font-size: 2.5rem;
     color: #333;
     font-weight: bold;
 }
 
+/* Paragraph style */
 p {
     font-size: 1.2rem;
     color: #666;
     margin-top: 10px;
 }
 
+/* Button style */
 button {
-    background-color: #fe2c55; /* TikTok's red color */
+    background-color: #fe2c55;
     border: none;
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -60,6 +82,7 @@ button:hover {
     background-color: #e5254c;
 }
 
+/* Footer style */
 footer {
     position: absolute;
     bottom: 20px;
