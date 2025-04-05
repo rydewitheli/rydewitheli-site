@@ -1,101 +1,94 @@
-/* Reset default margin and padding */
-* {
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-    margin: 0; /* Ensure no margin at the top of the page */
-}
-
-/* Full-width header */
-header {
-    background-color: #000;
-    width: 100%;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
-/* Logo styles */
-#logo {
-    height: 50px;
-}
-
-/* Main content section (centered vertically and horizontally) */
-main {
+header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 100px 20px 50px 20px; /* Adjust padding to account for fixed header */
-    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+    justify-content: space-between;
 }
 
-/* Welcome section */
-#welcome {
-    margin-top: 50px;
-}
-
-/* Heading style */
-h1 {
-    font-size: 2.5rem;
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 20px;
 }
 
-/* Paragraph style */
-p {
-    font-size: 1.2rem;
-    color: #666;
+header .logo span {
+    color: #25D366; /* Green like TikTok's primary color */
+}
+
+.login-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #128C7E;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.intro p {
+    color: #777;
+    font-size: 18px;
     margin-top: 10px;
 }
 
-/* Button style */
-button {
-    background-color: #fe2c55;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e5254c;
-}
-
-/* Footer style */
-footer {
-    position: absolute;
-    bottom: 20px;
+.user-info {
     text-align: center;
-    font-size: 1rem;
-    color: #999;
+    margin-top: 50px;
 }
 
-footer a {
-    color: #fe2c55;
-    text-decoration: none;
+.user-info img {
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.user-info h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.user-info p {
+    font-size: 18px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
