@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+#login-btn {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#login-btn:hover {
+    background-color: #45a049;
+}
